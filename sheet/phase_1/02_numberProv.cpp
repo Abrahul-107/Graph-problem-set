@@ -18,7 +18,7 @@ public:
         vector<vector<int>>adjList(n);
 
 
-        //building adjList from adjMatrix
+        //building adjList from adjMatrix for traverse and count
         for(int src=0;src<n;++src)
         {
             for(int dest=0;dest<n;++dest)
