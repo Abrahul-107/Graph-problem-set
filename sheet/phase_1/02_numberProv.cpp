@@ -17,6 +17,8 @@ public:
         int n = isConnected.size();
         vector<vector<int>>adjList(n);
 
+
+        //building adjList from adjMatrix
         for(int src=0;src<n;++src)
         {
             for(int dest=0;dest<n;++dest)
@@ -30,6 +32,8 @@ public:
         }
         vector<int>visited(n,0);
         int count = 0 ;
+
+        //Traversing each component and count
         for(int startNode=0;startNode<n;++startNode)
         {
             if(!visited[startNode])
